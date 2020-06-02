@@ -1,5 +1,6 @@
 $(function() {
-    $('#nav-content li a').on('click', function(event) {
-        $('#nav-input').prop('checked', false);
+    $('.navbar_toggle').on('click', function () {
+        $(this).toggleClass('open');
+        $('.menu').toggleClass('open');
     });
 });
