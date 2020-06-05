@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/stylesheet.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <script src="./jQuery/jquery-3.5.1.min.js"></script>
         <script src="./jQuery/js.js"></script>
@@ -10,7 +11,7 @@
     <header>
         <nav>
             <div class="drawer">
-                <a class="navbar_brand" href="#">HelloWorld</a>
+                <a class="navbar_brand" href="#">kenkenblog_portfolio</a>
                 <div class="navbar_toggle">
                     <span class="navbar_toggle_icon"></span>
                     <span class="navbar_toggle_icon"></span>
@@ -19,9 +20,9 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">PROFILE</a></li>
-                    <li><a href="#">SKILL</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#profile_sheet">PROFILE</a></li>
+                    <li><a href="#skill_sheet">SKILL</a></li>
+                    <li><a href="#portfolio_sheet">PORTFOLIO</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -30,10 +31,10 @@
 
     <div id="main">
 
-        <div class="content">
-            <h2 class="title">PROFILE</h2>
+        <div class="content"　id="profile_sheet">
+            <h2 class="title"><i class="far fa-user"></i>&nbsp;PROFILE</h2>
             <section class="profile">
-                <img class="profile-img" src="./img/2980_69845_message.jpeg">
+                <img id="profile-img" src="./img/2980_69845_message.jpeg">
                 <div class="profile-comment">
                     はじめまして。平成8年生まれの24歳エンジニアのつちやと申します。
                     　テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -43,15 +44,98 @@
             </section>
         </div>
 
-        <div class="content">
-            <h2 class="title">SKILL</h2>
-            <section class="profile">
-                <img class="profile-img" src="./img/2980_69845_message.jpeg">
-                <div class="profile-comment">
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        <div class="content" id="skill_sheet">
+            <h2 class="title"><i class="far fa-gem"></i>&nbsp;SKILL</h2>
+            <section class="skill">
+                <h3 id="front"><i class="fas fa-desktop"></i>&nbsp;フロントエンド</h3>
+                <table>
+                    <tr>
+                        <th>技術</th><th>経験年数</th><th>スキル</th>
+                    </tr>
+                    <tr>
+                        <td>HTML5</td><td>1年</td><td>スキル</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td><td>1年</td><td>スキル</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td><td>1年</td><td>スキル</td>
+                    </tr>
+                    <tr>
+                        <td>jQuery</td><td>1年</td><td>スキル</td>
+                    </tr>
+                </table>
+            </section>
 
-                </div>
+            <section class="skill">
+                <h3 id="front"><i class="fas fa-desktop"></i>&nbsp;バックエンド</h3>
+                <table>
+                    <tr>
+                        <th>技術</th><th>経験年数</th><th>スキル</th>
+                    </tr>
+                    <tr>
+                        <td>Ruby</td><td>1年</td><td>スキル</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td><td>1年</td><td>スキル</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td><td>1年</td><td>スキル</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="skill">
+                <h3 id="front"><i class="fas fa-server"></i>&nbsp;インフラ・その他</h3>
+                <table>
+                    <tr>
+                        <th>技術</th><th>経験年数</th><th>スキル</th>
+                    </tr>
+                    <tr>
+                        <td>MySQL</td><td>1年</td><td>スキル</td>
+                    </tr>
+                    <tr>
+                        <td>AWS(EC2・VPC等)</td><td>1年</td><td>スキル</td>
+                    </tr>
+                    <tr>
+                        <td>Github/Git</td><td>1年</td><td>スキル</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="skill">
+                <h3 id="front"><i class="fas fa-edit"></i>&nbsp;保有資格</h3>
+                <table>
+                    <tr>
+                        <th>資格</th>
+                    </tr>
+                    <tr>
+                        <td>ITパスポート</td>
+                    </tr>
+                    <tr>
+                        <td>基本情報技術者</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <div class="content" id="portfolio_sheet">
+            <h2 class="title"><i class="fas fa-images"></i>&nbsp;PORTFOLIO</h2>
+
+            <section class="portfolio">
+                <img id="portfolio-img" src="./img/tsuchiya_portfolio.jpeg">
+                <a href="#"><h3 id="front">tsuchiya_portfolio</h3></a>
+                <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+            </section>
+
+            <section class="portfolio">
+                <img id="portfolio-img" src="./img/Revelise.jpeg">
+                <a href="http://www.kenken1blog.com:3001/"><h3 id="front">Revelise</h3></a>
+                <p>                    はじめまして。平成8年生まれの24歳エンジニアのつちやと申します。
+                    　テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </section>
         </div>
 
