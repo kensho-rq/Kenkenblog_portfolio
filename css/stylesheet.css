@@ -3,11 +3,23 @@ body{
     font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
 }
 
+h3{
+    margin: 10px;
+}
+
 li{
     list-style: none;
 }
 
-a{
+p{
+    margin: 5px 0;
+}
+
+span{
+    font-size: 10px;
+}
+
+.url{
     text-decoration: none;
     color: #323A45;
 }
@@ -25,6 +37,11 @@ nav{
     height: 70px;
     position: relative;
     background: #F6F6F6;
+}
+
+th{
+    width: 300px;
+    padding: 17px;
 }
 
 td{
@@ -133,18 +150,38 @@ td{
     text-align: center;
 }
 
+#title-logo{
+    padding-left: 40px;
+    font-size: 25px;
+}
+
 .profile{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: auto;
     overflow:hidden;
+}
 
+.profile_content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    background-color: ghostwhite;
 }
 
 #profile-img {
     width: 20%;
     height: 20%;
-    margin: 30px;
+    margin: 40px 10px;
     float: left;
     border-radius: 70%;
     box-shadow: 0 2px 6px #c1ced7;
@@ -152,9 +189,10 @@ td{
 }
 
 .profile-comment{
-    width: 55%;
-    margin: 10px;
+    width: 70%;
+    margin: 40px 10px;
     float: left;
+    font-size: 14px;
 }
 
 #front{
@@ -179,10 +217,25 @@ td{
     background-color: ghostwhite;
 }
 
+.link-content{
+    width: 55%;
+    height: 170px;
+    margin: auto;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    background-color: ghostwhite;
+}
+
 .portfolio{
     width: 45%;
-    /* height: auto; */
-    height: 600px;
+    height: auto;
     margin: 30px 20px;
     float: left;
     display: -ms-flexbox;
@@ -201,16 +254,92 @@ td{
 
 #portfolio-img{
     width: 100%;
-    height: 300px;
     margin: 0 auto;
     box-shadow: 0 2px 6px #c1ced7;
     object-fit: cover;
 }
 
+.comment{
+    padding: 0 20px;
+    font-size: 13px;
+}
+
+#url_table{
+    margin: auto;
+}
+
+#url_table th{
+    width: 300px;
+}
+
+.sk{
+    font-size: 11px;
+    margin: 2px 0;
+}
+
+.footer__item {
+    background: #343a40;
+    width: 100%;
+    padding: 2rem 0;
+    margin-bottom: 0;
+}
+
+.footer {
+    margin: 0;
+    padding: 50px 0 0 0;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+@media screen and (max-width: 1026px) {
+    .profile_content {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .profile-comment {
+        width: 53%;
+    }
+
+    #profile-img {
+        width: 30%;
+    }
+
+    .skill {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 50px;
+        float: none;
+    }
+
+    .portfolio {
+        width: 90%;
+    }
+
+    .link-content{
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #profile-img {
+        width: 70%;
+        margin: 40px;
+        float: none;
+    }
+
+    .profile-comment {
+        width: 95%;
+        float: none;
+        margin: auto;
+    }
+}
 
 
-
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 400px) {
     nav{
         display: flex;
         flex-direction: row;

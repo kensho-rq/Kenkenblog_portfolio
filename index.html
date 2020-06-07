@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="drawer">
-                <a class="navbar_brand" href="#">kenkenblog_portfolio</a>
+                <div id="title-logo"><a class="navbar_brand url" href="#">kenkenblog_portfolio</a></div>
                 <div class="navbar_toggle">
                     <span class="navbar_toggle_icon"></span>
                     <span class="navbar_toggle_icon"></span>
@@ -20,10 +20,10 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#profile_sheet">PROFILE</a></li>
-                    <li><a href="#skill_sheet">SKILL</a></li>
-                    <li><a href="#portfolio_sheet">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a class="url" href="#profile_sheet">PROFILE</a></li>
+                    <li><a class="url" href="#skill_sheet">SKILL</a></li>
+                    <li><a class="url" href="#portfolio_sheet">PORTFOLIO</a></li>
+                    <li><a class="url" href="#link_sheet">LINK</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,17 +31,22 @@
 
     <div id="main">
 
-        <div class="content"　id="profile_sheet">
+        <div class="content" id="profile_sheet">
             <h2 class="title"><i class="far fa-user"></i>&nbsp;PROFILE</h2>
-            <section class="profile">
-                <img id="profile-img" src="./img/2980_69845_message.jpeg">
-                <div class="profile-comment">
-                    はじめまして。平成8年生まれの24歳エンジニアのつちやと申します。
-                    　テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </div>
-            </section>
+            <div class="profile_content">
+                <section class="profile">
+                    <img id="profile-img" src="./img/neko.jpeg">
+                    <p class="profile-comment">
+                        はじめまして。都内在住の24歳エンジニアのケンと申します。<br>
+                        前職は航空自衛隊で働いておりましたが、子供の頃から憧れのプログラマを目指す為に退職。<br>
+                        職業訓練校に入学し、ITの基礎知識、プログラミング技術、データベースの設計、操作を学びました。<br>
+                        現在は、IT企業でSESをしております。<br>
+                        web系の自社開発企業でエンジニアとして働く為、日々勉強をしております。<br/>
+                        まだまだ駆け出しではありますが、一流のエンジニアとなる為なら、努力は惜しまなく全力を尽くそうと思っております。<br>
+                        （2020年06月現在）
+                    </p>
+                </section>
+            </div>
         </div>
 
         <div class="content" id="skill_sheet">
@@ -53,16 +58,16 @@
                         <th>技術</th><th>経験年数</th><th>スキル</th>
                     </tr>
                     <tr>
-                        <td>HTML5</td><td>1年</td><td>スキル</td>
+                        <td>HTML5</td><td>1年</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>CSS3</td><td>1年</td><td>スキル</td>
+                        <td>CSS3</td><td>1年</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>Javascript</td><td>1年</td><td>スキル</td>
+                        <td>Javascript</td><td>1年</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>jQuery</td><td>1年</td><td>スキル</td>
+                        <td>jQuery</td><td>1年</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                 </table>
             </section>
@@ -74,13 +79,13 @@
                         <th>技術</th><th>経験年数</th><th>スキル</th>
                     </tr>
                     <tr>
-                        <td>Ruby</td><td>1年</td><td>スキル</td>
+                        <td>Ruby</td><td>1年未満</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>PHP</td><td>1年</td><td>スキル</td>
+                        <td>PHP</td><td>1年</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>Java</td><td>1年</td><td>スキル</td>
+                        <td>Java</td><td>1年未満</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                 </table>
             </section>
@@ -92,13 +97,16 @@
                         <th>技術</th><th>経験年数</th><th>スキル</th>
                     </tr>
                     <tr>
-                        <td>MySQL</td><td>1年</td><td>スキル</td>
+                        <td>MariaDB</td><td>1年</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>AWS(EC2・VPC等)</td><td>1年</td><td>スキル</td>
+                        <td>MySQL</td><td>1年未満</td><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>Github/Git</td><td>1年</td><td>スキル</td>
+                        <td>AWS(EC2・VPC等)</td><td>1年未満</td><td><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Github/Git</td><td>1年未満</td><td><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                 </table>
             </section>
@@ -123,25 +131,74 @@
             <h2 class="title"><i class="fas fa-images"></i>&nbsp;PORTFOLIO</h2>
 
             <section class="portfolio">
-                <img id="portfolio-img" src="./img/tsuchiya_portfolio.jpeg">
-                <a href="#"><h3 id="front">tsuchiya_portfolio</h3></a>
-                <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-                <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+                <a class="url" href="#">
+                <img id="portfolio-img" src="./img/ken_portfolio.jpeg">
+                <h3 id="front">ken_portfolio&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></h3></a>
+                <p class="comment">自分のプロフィールです。<br>
+                    自己紹介、スキル、自分のQiitaやGithubまでのリンクを載せています。
+                    <p class="comment sk">
+                        言語：HTML/CSS/JavaScript<br>
+                        DB：MYSQL<br>
+                        インフラ：AWS(EC2/VPC/Route53)、Git/Github<br>
+                        その他：Nginx<br>
+                        github_url：<a href="https://github.com/kensho-rq/profile">https://github.com/kensho-rq/profile</a>
+                    </p>
+                </p>
             </section>
 
             <section class="portfolio">
+                <a class="url" href="http://www.kenken1blog.com:3001/">
                 <img id="portfolio-img" src="./img/Revelise.jpeg">
-                <a href="http://www.kenken1blog.com:3001/"><h3 id="front">Revelise</h3></a>
-                <p>                    はじめまして。平成8年生まれの24歳エンジニアのつちやと申します。
-                    　テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <h3 id="front">Revelise&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></h3></a>
+                <p class="comment">使用した商品の感想を投稿して、
+                    おすすめの商品を紹介しあうサイトです。<br>
+                    商品にコメントやいいねをつけることができます。<br>
+                    また、お気に入りのユーザーをフォローすることができ<br>
+                    そこから、投稿された商品詳細を見ることができます。
+                    <p class="comment sk">
+                        言語：HTML、CSS、JavaScript、Ruby(Ruby on Rails)<br>
+                        DB：MYSQL<br>
+                        インフラ：AWS(EC2/VPC/Route53)、Git/Github、Docker/docker-compose、CircleCI（CI/CD)<br>
+                        その他：Nginx, Unicorn<br>
+                        github_url：<a href="https://github.com/kensho-rq/Revelise_Portfolio">https://github.com/kensho-rq/Revelise_Portfolio</a>
+                    </p>
+                </p>
+
+
+
+            </section>
+        </div>
+
+        <div class="content" id="link_sheet">
+            <h2 class="title"><i class="fas fa-external-link-alt"></i>&nbsp;LINK</h2>
+            <section class="link-content">
+                <table id="url_table">
+                    <tr>
+                        <th>サイト名</th><th>URL</th>
+                    </tr>
+                    <tr>
+                        <td><a class="url" href="https://github.com/kensho-rq"><i class="fab fa-github"></i>&nbsp;GitHub</a></td><td><a href="https://github.com/kensho-rq">https://github.com/kensho-rq</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="url" href="https://qiita.com/Ken_tk">
+                                <span class="fa-stack" style="color:#4cb10d">
+                                <i class="fa fa-square fa-stack-2x"></i>
+                                <i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
+                                </span>Qiita
+                            </a>
+                        </td>
+                        <td><a href="https://qiita.com/Ken_tk">https://qiita.com/Ken_tk</a></td>
+                    </tr>
+                </table>
             </section>
         </div>
 
     </div>
 
-    <footer>
+    <footer class="footer">
+        <p class="footer__item">© 2020 kenkenblog_portfolio</p>
     </footer>
+
     </body>
 </html>
